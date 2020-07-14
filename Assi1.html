@@ -1,0 +1,24 @@
+<html>
+<head>
+    <h1>
+        Javascript to show current day and time:
+    </h1>
+
+</head>
+    <body>
+        <script>
+
+        var today=new Date();
+        var day =today.getDay();
+        var daylist=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        document.write("Today is="+daylist[day]);
+        
+        document.write("<br />");
+        var time=today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+
+         document.write("current time="+time)   
+        
+        </script>
+    </body>
+
+</html>
