@@ -1,0 +1,61 @@
+Q1- Explain the various methods in console function.
+
+1 - console.log()
+
+	It is used to print the output on console.
+	You can write any type inside the console like string ,array,object.
+	
+	console.log('abc');                 //this is for string
+	console.log(1);		//for number type
+	console.log(true);		//for boolean type
+	console.log([2,1,4,6]);	//you can write array also
+
+2 - console.error()
+
+	It is used to give the error message on console.
+	It is mainly used in testing of code.
+	Bydefault the message will be highlited in red colour.
+
+	console.error("This is an error");
+
+3 - console.warn()
+
+	This is used to show the warning message on console.
+	Bydefault the message is in yellow colour.
+
+	console.warn("This is warning message");
+
+4 - console.table()
+
+	This method allows us to create an table on console.
+	The input must be an array or an object which will be shown in table.
+
+	console.table('p':111 , 'q':222);
+
+5 - console.time()
+
+	This method is used whenever we want to know the amount of time which is spend by the block of function.
+	they take a label which must be same and code inside can anything(function ,object);
+
+	console.time('abc');
+	let func=function()
+	{
+		console.log("func is running");
+	}
+
+	let func2=function()
+	{
+		console.log("func2 is running");
+	}
+
+	func();
+	func2();
+	console.timeEnd();
+
+6 - console.clear()
+
+	This method is used to clear the console.
+	the console will clear and the browser will print the message that 'console was cleard'.
+
+
+	
