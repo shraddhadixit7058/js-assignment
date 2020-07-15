@@ -1,0 +1,47 @@
+Q-2 Write a difference between var ,let , and const
+
+1 - var 
+	
+	The scope of var variable is global when it is declared outside a function.
+	This means when variable  can declared with var outside function block this will be available for whole window.
+	If you can declared a variable with var inside a function then this can be accessable only within function.
+
+	var person="abc";
+	function func1()
+	{
+		var emp="pqr";
+	}
+
+	var person can be declared as globally while var emp can be inside a function so we cannot access it outside.
+
+
+2 - let
+
+	It is used for variable declaration.
+	let is block scoped.
+	Whenever we declare a variable with let the scope of that variable is only in that function.
+	cannot access outside a block.
+	It will throw an error.
+
+	let city="pune";
+	let time =4;
+
+	if(time >3)
+	{
+		let country="India";
+		console.log(country);           //India
+	}
+
+	console.log(country);                          // India not found
+
+
+
+3 - const 
+
+	Variables declared with const it maintain a constat values you cannot changenit.
+	const is block scoped.
+	The value cannot be re-declared or updated.
+
+	const city="Mumbai";
+
+	city="Solapur";           // throw an error 
