@@ -1,0 +1,46 @@
+Q-3 Write brief introduction on available datatypes in javascript.
+
+1- Number
+
+	The number type can represent both integer and floating point number.
+	there are various operations can be performed on numbers e.g addition,multiplication,divisin,substraction and so on.
+	Besides regular numbers there are so called "speacial numeric values" belongs to Infinity .
+
+	e.g   let n=123;
+		n=2.4;
+ 
+
+2 - String
+
+	String data type can surrounded by double quotes.
+	You can give single ,double quotes or backticks.
+
+	let str="Hiiiii";
+	let str2='This is single quotes';
+	let str3=`Hellooo`;
+
+3 - Boolean
+
+	The boolean datatype has only two values i.e true and false.
+	this type is commenly used to store the yes/no values.
+	if your output is correct then it return true otherfalse false.
+
+	let nameFieldChecked = true;
+	let ageFieldChecked = false;
+
+4 - null
+
+	The null type does not belong to any of datatype.
+	It forms a separate type of its own which contains null value.
+
+	let agev= null;
+
+5 - undefined
+
+	It specifies that the value cannot defined.
+	If variable is declared but not assigned then its value is undefined.
+
+	let age;
+	alert(age);   // shows undefined 
+
+	
