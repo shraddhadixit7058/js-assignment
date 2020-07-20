@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+
+    <!--  Destructure the following object
+            const student={ name: "Helsink",
+                            age : 24,
+                            projects: {diceGame:"Two player dice game using javascript"
+                                     }
+                         }
+        -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>Day_4 Assignment_2</h1>
+
+    
+</head>
+<body>
+    
+    <script>
+
+    const student={
+                     name: "Helsink",
+                    age : 24,
+                    projects: {
+                        diceGame:"Two player dice game using javascript"
+                             }
+                 }
+
+        const {name,age,projects:{diceGame}}=student;
+        console.log(name,age,diceGame);
+    </script>
+</body>
+</html>
