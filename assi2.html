@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1> Day_5 assignment_2</h1>
+       
+    
+</head>
+<body>
+    
+    <script>
+
+        class User
+        {
+            constructor(name,age,email,coins,course)
+            {
+                this.name = name;
+                this.age=age;
+                this.email=email;
+                this.coins=0;
+                this.course=[];
+                
+            }
+
+            login()
+            {
+                console.log(`${this.name} has loged in`);
+            }
+
+            logout()
+            {
+                console.log(`${this.name} has loged out`);
+            }
+         }
+
+         class Moderator extends User
+         {
+             constructor(name,age,email,coins,course,role)
+             {
+                 super(name,age,email,coins,course);
+                 this.role=role;
+             }
+
+             AddCoins()
+             {
+                this.coins++;
+                console.log(`${this.name} has added ${this.coins} coin `);
+             }
+
+             RemoveCoins()
+             {
+                 this.coins --;
+                 console.log(`${this.name} has removed ${this.coins} coin and remaining ${this.coins}`);
+             }
+         }
+
+         class Admin extends Moderator
+         {
+            constructor(name,age,email,coins,course)
+             {
+                 super(name,age,email,coins,course);
+                 //this.course=course;
+
+             }
+
+             AddCourse(User,course)
+             {
+                User.course.push(course);
+                console.log(User);
+             }
+
+             DeleteCourse(User,course)
+             {
+                for(let i=0;i<course.length;i++)
+                {
+                 User.course.pop(course[i]);
+                }
+                 console.log(User);
+                 
+             }
+
+         }
+
+         let user=new User('shraddha',23,'abc@gmail.com');
+         user.login();
+
+         let moderator=new Moderator('Dinesh',33,'asd@gmail.com','teacher');
+
+         moderator.AddCoins();
+         moderator.AddCoins();
+       
+         moderator.RemoveCoins();
+         //console.log(moderator);
+
+         let admin=new Admin('Ajay',23,'asd@gmail.com','teacher');
+         admin.AddCourse(user,'Javascript');
+         admin.AddCourse(moderator,'Javascript,python');
+         admin.AddCourse(admin,'Javascript,Python,HTML,CSS');
+
+         admin.DeleteCourse(admin,'CSS');
+
+         //console.log(user);
+         //console.log(moderator);
+         //console.log(admin);
+
+         
+       
+    </script>
+</body>
+</html>
