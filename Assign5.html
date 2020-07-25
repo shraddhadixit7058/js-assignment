@@ -1,0 +1,50 @@
+<!-- You are managing a sales department for your company, you want to reward your employees based on
+the sales made by them during the year.
+The criteria is as follows:
+1. Sales from 0-5000 : 2%
+2. Sales from 5001 - 10000 : 5%
+3. Sales from 10001 - 20000 : 7%
+4. Above 20000 - 10%
+Then log the total commission earned by him. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <body>
+        <h2>Day_4 assignment_5</h2>
+    
+    <title>Document</title>
+    <script defer>
+        let sales=prompt("Enter sales made by employee");
+        let rew;
+            if(sales >0 && sales<=5000){
+                console.log("Sales made by employee ",sales);
+                rew=(2*sales/100);
+                console.log("1")
+                console.log("Reward get employee ",rew)
+            }
+            else if(sales >=5001 && sales<=10000){
+                console.log("Sales made by employee ",sales);
+                rew=(5*sales/100);
+                console.log("2")
+                console.log("Reward get employee ",rew)
+            }
+            else if(sales >=10001 && sales<=20000){
+                console.log("Sales made by employee ",sales);
+                rew=(7*sales/100);
+                console.log("3")
+                console.log("Reward get employee ",rew)
+            }
+            else if(sales >20000){
+                console.log("Sales made by employee ",sales);
+                rew=(10 *sales/100);
+                console.log("4")
+                console.log("Reward get employee ",rew)
+            }
+
+    </script>
+</head>
+
+</body>
+</html>
