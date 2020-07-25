@@ -1,0 +1,52 @@
+<!-- Make a Calculator in Javascript which can do operations as Addtion, 
+Subtraction, Multiplication, Division,
+Square root, Percentage. -->
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Day_4 assignment_4
+    </h2>
+    <script>
+        let calculate=prompt("Enter (1) for Addition(2) for subtraction (3) for multiplication (4) for divisiom (5) for square root ");
+        let no=prompt("Enter two no to do operation "),
+        no1=no.split(" ")[0],
+        no2=no.split(" ")[1];
+        let temp;
+        console.log("Cal : ",calculate)
+        console.log(no1 , " " ,no2)
+        switch(calculate){
+            case 1:
+                temp=no1+no2;
+                console.log('Addition of two number : ',temp);
+                break;
+            case 2:
+                temp=no1-no2;
+                console.log('Substraction of two number : ',temp);
+                break;
+            case 3:
+                temp=no1*no2;
+                console.log('Multiplication of two number : ',temp);
+                break;
+            case 4:
+                temp=no1/no2;
+                console.log('Division of two number : ',temp);
+                break;
+            case 5:
+                no1=Math.sqrt(no1);
+                no2=Math.sqrt(no2);
+                console.log('Square of first number : ',no1);
+                console.log('Square of second number : ',no2);
+                break;
+            // default:
+            //     console.log('Nothing to do!!');
+            //     break;
+
+        }
+    </script>
+</body>
+</html>
